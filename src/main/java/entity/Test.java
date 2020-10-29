@@ -6,5 +6,6 @@ package entity;
  * @date :  2020/10/29
  */
 public class Test {
-    //测试github提交
+    private String name;
+    private Integer age;
 }
