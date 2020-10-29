@@ -98,7 +98,7 @@
       <version>5.2.7.RELEASE</version>
     </dependency>
 
-    <!--spring dao-->
+    <!--spring com.wangjun.dao-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
