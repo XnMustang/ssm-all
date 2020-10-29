@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Author : 王俊
  * @date :  2020/10/29
  */
-public class BookServiceImplTest {
+public class BookServiceImplTest extends BaseTest{
 
     @Autowired
     private BookService bookService;
@@ -17,7 +17,7 @@ public class BookServiceImplTest {
     @Test
     public void testAppoint(){
         long bookId = 1001;
-        long studentId = 12345678910L;
+        long studentId = 12;
         AppointExecution appoint = bookService.appoint(bookId, studentId);
         System.out.println(appoint);
     }
