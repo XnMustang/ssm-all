@@ -16,8 +16,8 @@ public class BookServiceImplTest extends BaseTest{
 
     @Test
     public void testAppoint(){
-        long bookId = 1001;
-        long studentId = 12;
+        long bookId = 1002;
+        long studentId = 1;
         AppointExecution appoint = bookService.appoint(bookId, studentId);
         System.out.println(appoint);
     }
