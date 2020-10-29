@@ -72,13 +72,4 @@ public class AppointExecution {
         this.appointment = appointment;
     }
 
-    @Override
-    public String toString() {
-        return "AppointExecution{" +
-                "bookId=" + bookId +
-                ", state=" + state +
-                ", stateInfo='" + stateInfo + '\'' +
-                ", appointment=" + appointment +
-                '}';
-    }
 }
