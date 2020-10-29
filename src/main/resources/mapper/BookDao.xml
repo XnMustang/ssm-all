@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wangjun.dao.BookDao">
+
+    <select id="queryById" resultType="Book" parameterType="long">
+        select
+            book_id,name,number
+        from
+            ssm.book
+        where
+            book_id = #{bookId}
+    </select>
+
+    <update id="reduceNumber">
+        update
+            ssm.book
+        set
+            number = number - 1
+        where
+            book_id = #{bookId}
+        and
+            number > 0
+    </update>
+
+    <select id="queryAllBook" resultType="com.wangjun.entity.Book">
+        select
+            book_id,name,number
+        from
+            ssm.book
+        order by
+            book_id
+        limit #{offset}, #{limit}
+    </select>
+
+</mapper>
